@@ -46,7 +46,7 @@ def parser_add_main_args(parser):
     # dataset and evaluation
     parser.add_argument('--dataset', type=str, default='cora')
     parser.add_argument('--sub_dataset', type=str, default='')
-    parser.add_argument('--data_dir', type=str, default='../../../NodeFormer/data/')
+    parser.add_argument('--data_dir', type=str, default='/back-up/wsy/gfdatasets/NodeFormer/data/')
     parser.add_argument('--device', type=int, default=0,
                         help='which gpu to use if any (default: 0)')
     parser.add_argument('--seed', type=int, default=123)
@@ -114,7 +114,7 @@ def parser_add_main_args(parser):
     parser.add_argument('--save_model', action='store_true', help='whether to save model')
     parser.add_argument('--use_pretrained', action='store_true', help='whether to use pretrained model')
     parser.add_argument('--save_att', action='store_true', help='whether to save attention (for visualization)')
-    parser.add_argument('--model_dir', type=str, default='../../model/')
+    parser.add_argument('--model_dir', type=str, default='/back-up/wsy/gfdatasets/NodeFormer/model/')
 
     # other gnn parameters (for baselines)
     parser.add_argument('--hops', type=int, default=2,

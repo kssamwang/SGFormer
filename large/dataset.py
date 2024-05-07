@@ -700,5 +700,5 @@ def papers100M_sub(data_dir):
 
 
 if __name__=='__main__':
-    # load_papers100M('../data')
-    papers100M_sub('../../data')
+    # load_papers100M('/back-up/wsy/gfdatasets/NodeFormer/data')
+    papers100M_sub('/back-up/wsy/gfdatasets/NodeFormer/data')

@@ -15,7 +15,7 @@ from data_utils import normalize_feat, rand_train_test_idx
 from sklearn.preprocessing import label_binarize
 from torch_geometric.datasets import Planetoid
 
-DATAPATH = '../../data/'
+DATAPATH = '/back-up/wsy/gfdatasets/NodeFormer/data/'
 
 class NCDataset(object):
     def __init__(self, name, root=f'{DATAPATH}'):
@@ -147,9 +147,9 @@ def load_planetoid_dataset(name, no_feat_norm=False):
     return dataset
 
 def load_geom_gcn_dataset(name):
-    # graph_adjacency_list_file_path = '../../data/geom-gcn/{}/out1_graph_edges.txt'.format(
+    # graph_adjacency_list_file_path = '/back-up/wsy/gfdatasets/NodeFormer/data/geom-gcn/{}/out1_graph_edges.txt'.format(
     #     name)
-    # graph_node_features_and_labels_file_path = '../../data/geom-gcn/{}/out1_node_feature_label.txt'.format(
+    # graph_node_features_and_labels_file_path = '/back-up/wsy/gfdatasets/NodeFormer/data/geom-gcn/{}/out1_node_feature_label.txt'.format(
     #     name)
     graph_adjacency_list_file_path = os.path.join(DATAPATH, 'geom-gcn/{}/out1_graph_edges.txt'.format(name) )
     graph_node_features_and_labels_file_path = os.path.join(DATAPATH, 'geom-gcn/{}/out1_node_feature_label.txt'.format(name) )

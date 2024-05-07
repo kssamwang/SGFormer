@@ -131,7 +131,7 @@ def load_fixed_splits(dataset, name, protocol):
         splits["test"] = torch.as_tensor(dataset.test_idx)
         splits_lst.append(splits)
     elif name in ["chameleon", "squirrel"]:
-        file_path = f"../../data/wiki_new/{name}/{name}_filtered.npz"
+        file_path = f"/back-up/wsy/gfdatasets/NodeFormer/data/wiki_new/{name}/{name}_filtered.npz"
         data = np.load(file_path)
         train_masks = data["train_masks"]  # (10, N), 10 splits
         val_masks = data["val_masks"]
@@ -149,7 +149,7 @@ def load_fixed_splits(dataset, name, protocol):
     elif name in ["film"]:
         for i in range(10):
             splits_file_path = (
-                "../../data/geom-gcn/{}/{}".format(name, name)
+                "/back-up/wsy/gfdatasets/NodeFormer/data/geom-gcn/{}/{}".format(name, name)
                 + "_split_0.6_0.2_"
                 + str(i)
                 + ".npz"

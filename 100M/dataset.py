@@ -108,5 +108,5 @@ def load_papers100M(data_dir):
     return dataset
 
 if __name__=='__main__':
-    # load_papers100M('../data')
+    # load_papers100M('/back-up/wsy/gfdatasets/NodeFormer/data')
     pass
